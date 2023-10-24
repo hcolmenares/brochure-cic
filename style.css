@@ -164,10 +164,8 @@ body {
 }
 
 .box {
-    position: relative;
-    background: var(--blanco);
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 0.3125rem 1.25rem rgba(0, 0, 0, 0.1);
@@ -175,7 +173,7 @@ body {
 }
 
 .box:hover {
-    border: 0.2rem solid var(--azul-oscuro);
+    outline: 0.2rem solid var(--azul-oscuro);
 }
 
 .box h2 {
@@ -184,11 +182,13 @@ body {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.2;
-    margin: 1rem;
+    margin: 2rem auto 0 auto;
+    padding: 1rem;
 }
 
 .box h2 span {
-    font-size: 2rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
@@ -221,17 +221,18 @@ body {
 }
 
 .card-botton {
-    border: none;
     background-color: var(--azul-oscuro);
-    color: var(--blanco) !important;
     text-align: center;
-    font-size: 1.8rem;
-    color: var(--blanco);
-    margin-top: 0.2rem;
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-top: 0 auto;
     border-radius: 0.313rem;
     padding: 0.3rem;
     cursor: pointer;
+    width: 100%;
+}
+
+.card-botton a {
+    color: var(--blanco) !important;
     width: 100%;
 }
 
@@ -334,8 +335,6 @@ a:active {
     }
 
     .card-botton {
-        width: 90%;
-        font-size: 1rem;
         padding: 0.5rem;
     }
 
@@ -426,9 +425,7 @@ a:active {
     }
 
     .card-botton {
-        font-size: 0.9rem;
-        margin-left: 0.75rem;
-        width: 90%;
+        font-size: 2rem;
     }
 
 }
