@@ -471,7 +471,7 @@ a:active {
 
 @media (max-width: 450px) {
   .wrapper {
-    margin-top: 15rem;
+    margin-top: 8rem;
   }
 
   .header {
@@ -595,7 +595,7 @@ a:active {
 
 @media (max-width: 360px) {
   .wrapper {
-    margin-top: 8rem;
+    margin-top: 4rem;
   }
 
   .heading {
