@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Brochure - CIC</title>
 </head>
+
 <body>
-    
+
     <!-- Header -->
 
     <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="http://corrosion.uis.edu.co/webcic/index.php/es/sobre-la-cic/quienes-somos">
-                    <img class="logo-image" src="img/logo-claro.png" alt="Logo">
-                </a>
+        <div class="header__grid contenedor">
+            <div class="header__logo">
+                <img class="header__image" src="img/logo-claro.png" alt="Logo cic">
             </div>
             <nav class="navigation">
-                <ul class="nav-list">
-                    <a href="#" class="nav-item">
-                        <li>Inicio</li>
-                    </a>
-                    <a href="http://corrosion.uis.edu.co/webcic/index.php/es/sobre-la-cic/quienes-somos"
-                        class="nav-item">
-                        <li>CIC</li>
-                    </a>
-                    <a href="#" class="nav-item">
-                        <li>Servicios</li>
-                    </a>
-                    <a href="#" class="nav-item">
-                        <li>Productos</li>
-                    </a>
-                    <a href="#" class="nav-item">
-                        <li>Contacto</li>
-                    </a>
+                <ul class="navigation__lista">
+                    <li class="navigation__enlace">Inicio</li>
+                    <li class="navigation__enlace">CIC</li>
+                    <li class="navigation__enlace">Servicios</li>
+                    <li class="navigation__enlace">Productos</li>
+                    <li class="navigation__enlace">Contacto</li>
                 </ul>
             </nav>
         </div>
@@ -42,70 +31,53 @@
 
     <!-- Wrapper -->
 
-    <main>
-        <div class="wrapper">
+    <main class="catalogo">
+        <h2 class="catalogo__heading">Corporación para la Investigación de la Corrosión</h2>
 
-            <!-- Nuestros Productos -->
-    
-            <section class="team" id="team">
-    
-                <h2 class="heading">Corporación para la Investigación de la Corrosión</h2>
-    
-                <div class="container">
-    
-                    <div class="teamBx">
-    
-                        <a href="producto-kits.html">
-                            <div class="box">
-    
-                                <h2>Brochure <span>CIC</span></h2>
-    
-                                <div class="imgBx">
-                                    <img src="img/Diapositiva2.png" alt="Card_Image_Liquidas">
-                                </div>
+        <div class="catalogo__grid contenedor">
 
-                                <div class="card-botton">
-                                    <a href="#">¡Descarga aquí!</a>
-                                </div>
-                            </div>
-                        </a>
-    
+            <div class="carta">
+                <h2 class="carta__heading">Brochure <span>CIC</span></h2>
+
+                <div class="carta__contenido">
+                    <div class="carta__imagen">
+                        <img src="img/Logo.svg" alt="Card_Image_Liquidas">
                     </div>
-    
-                    <div class="teamBx">
-    
-                        <a href="producto-viales.html">
-                            <div class="box">
-    
-                                <h2>Catálogo <span>de productos CIC</span></h2>
-    
-                                <div class="imgBx">
-                                    <img src="img/Diapositiva1.png" alt="Card_Image_Solidas">
-                                </div>
-    
-                                <div class="card-botton">
-                                    <a href="#">¡Descarga aquí!</a>
-                                </div>
-                                
-                            </div>
-                        </a>
-    
+
+                    <div class="carta__boton">
+                        <a href="#">¡Descarga aquí!</a>
                     </div>
-    
                 </div>
-    
-            </section>
-    
-    
+
+            </div> <!-- Fin carta -->
+
+            <div class="carta">
+                <h2 class="carta__heading">Catálogo <span>de Productos</span></h2>
+
+                <div class="carta__contenido">
+                    <div class="carta__imagen">
+                        <img src="img/Catálogo.svg" id="catalogo" alt="imagen catalogo">
+                    </div>
+
+                    <div class="carta__boton">
+                        <a href="#">¡Descarga aquí!</a>
+                    </div>
+                </div>
+
+            </div> <!-- Fin carta -->
+
         </div>
     </main>
 
     <!-- Footer -->
 
     <footer class="footer">
-        <p class="text">Corporación para la Investigación de la Corrosión - CIC</p>
+        <div class="footer__grid contenedor">
+            <p class="footer__texto">Equipo de Alto Desempeño para el Manejo de la Corrosión y la Integridad</p>
+        </div>
     </footer>
 
     <script src="main.js"></script>
 </body>
+
 </html>
